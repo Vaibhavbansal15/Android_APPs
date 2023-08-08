@@ -26,6 +26,15 @@
         android:text="focus on Pop-Ups"
         android:textSize="24sp" />
 
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go to Second Activity"
+        android:layout_margin="50dp"
+        android:layout_below="@id/text2"
+        android:textSize="24sp" />
+
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"
         android:layout_width="wrap_content"
