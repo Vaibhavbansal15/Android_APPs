@@ -3,6 +3,7 @@ package com.example.constraint_layout;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -25,6 +26,15 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
+        Button btn2 = findViewById(R.id.OpenBrowser);
+        btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openWebPage();
+            }
+        });
+
+
         // Initializing UI Elements and Variables here
         Toast.makeText(this,
                 "onCreate() is called ",
@@ -36,7 +46,11 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-
+    public void openWebPage(){
+        Uri webpage = Uri.parse("https://www.google.com");
+        Intent intent = new Intent(Intent.ACTION_VIEW, webpage);
+        startActivity(intent);
+    }
 
     @Override
     protected void onStart() {
