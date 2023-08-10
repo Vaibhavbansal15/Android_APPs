@@ -21,18 +21,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         textView = findViewById(R.id.welcome_text);
-        editText = findViewById(R.id.inout_name);
+        editText = findViewById(R.id.input_name);
         luckBtn = findViewById(R.id.luck_btn);
-
-        luckBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                String name = editText.getText().toString();
-                Toast.makeText(MainActivity.this,
-                        "Good Luck!"+name,
-                        Toast.LENGTH_SHORT).show();
-            }
-        });
 
     }
 }
