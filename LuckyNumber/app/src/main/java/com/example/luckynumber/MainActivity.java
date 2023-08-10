@@ -27,13 +27,12 @@ public class MainActivity extends AppCompatActivity {
 
         luckBtn.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                goToSecondPage();
+            public void onClick(View v) {
+                String UserName = editText.getText().toString();
+                Intent intent = new Intent(getApplicationContext(), SecondPage.class);
+                intent.putExtra("Name",UserName);
+                startActivity(intent);
             }
         });
     }
-        public void goToSecondPage(){
-            Intent intent = new Intent(this, SecondPage.class);
-            startActivity(intent);
-        }
 }
