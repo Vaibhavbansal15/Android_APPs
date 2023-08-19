@@ -1,8 +1,12 @@
 package com.example.volumeareaapp;
 
+import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.GridView;
 
 import java.util.ArrayList;
@@ -39,5 +43,12 @@ public class MainActivity extends AppCompatActivity {
         gridView.setAdapter(adapter);
         gridView.setNumColumns(2);
 
+        gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Intent i = new Intent(getApplicationContext(), Sphere.class);
+                startActivity(i);
+            }
+        });
     }
 }
