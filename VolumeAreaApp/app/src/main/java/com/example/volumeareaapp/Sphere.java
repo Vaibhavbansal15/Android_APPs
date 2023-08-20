@@ -13,26 +13,26 @@ import org.w3c.dom.Text;
 public class Sphere extends AppCompatActivity {
 
     EditText sphere_radius;
-    TextView title, result;
-    Button btn;
+    TextView title, sphere_result;
+    Button btn1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sphere);
         sphere_radius = findViewById(R.id.editText_sphere);
-        title = findViewById(R.id.textView2);
-        result = findViewById(R.id.sphere_volume);
-        btn = findViewById(R.id.Btn1);
+        title = findViewById(R.id.text_Sphere);
+        sphere_result = findViewById(R.id.sphere_volume);
+        btn1 = findViewById(R.id.Btn1);
 
-        btn.setOnClickListener(new View.OnClickListener() {
+        btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String radius = sphere_radius.getText().toString();
                 int r = Integer.parseInt(radius);
 
                 double Volume = (4/3) * 3.14159 * r*r*r;
-                result.setText("V = "+Volume+" m^3");
+                sphere_result.setText("V = "+Volume+" m^3");
             }
         });
     }

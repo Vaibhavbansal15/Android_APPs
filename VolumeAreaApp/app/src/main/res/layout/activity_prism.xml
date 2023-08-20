@@ -7,11 +7,11 @@
     tools:context=".Sphere">
 
     <TextView
-        android:id="@+id/text_Sphere"
+        android:id="@+id/text_Prism"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="78dp"
-        android:text="Sphere Volume"
+        android:text="Prism Volume"
         android:textColor="@color/black"
         android:textSize="48sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -19,20 +19,33 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editText_sphere"
+        android:id="@+id/editText_prism"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
-        android:hint="Enter the Radius"
+        android:hint="Enter the Base"
         android:textColor="@color/black"
         android:textSize="32sp"
-        app:layout_constraintBottom_toTopOf="@+id/sphere_volume"
+        app:layout_constraintBottom_toTopOf="@+id/prism_volume"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <EditText
+        android:id="@+id/editText_prism2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="301dp"
+        android:hint="Enter the Height"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
     <TextView
-        android:id="@+id/sphere_volume"
+        android:id="@+id/prism_volume"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
@@ -41,21 +54,20 @@
         android:textSize="38sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText_sphere" />
+        app:layout_constraintTop_toBottomOf="@+id/editText_prism2"
+        app:layout_constraintVertical_bias="0.614" />
 
     <Button
-        android:id="@+id/Btn1"
+        android:id="@+id/Btn4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="154dp"
-        android:layout_marginBottom="156dp"
+        android:layout_marginBottom="92dp"
         android:text="Calculate Volume"
-        app:layout_constraintBottom_toBottomOf="@+id/sphere_volume"
+        app:layout_constraintBottom_toBottomOf="@+id/prism_volume"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/text_Sphere"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

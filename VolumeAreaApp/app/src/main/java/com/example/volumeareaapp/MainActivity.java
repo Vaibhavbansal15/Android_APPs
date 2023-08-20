@@ -1,6 +1,5 @@
 package com.example.volumeareaapp;
 
-import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -46,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Intent i = new Intent(getApplicationContext(), Sphere.class);
+                Intent i = new Intent(getApplicationContext(), Cylinder.class);
                 startActivity(i);
             }
         });
