@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background"
     tools:context=".Sphere">
 
     <TextView
@@ -12,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="78dp"
         android:text="Sphere Volume"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="48sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -24,7 +25,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
         android:hint="Enter the Radius"
-        android:textColor="@color/black"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
         android:textSize="32sp"
         app:layout_constraintBottom_toTopOf="@+id/sphere_volume"
         app:layout_constraintEnd_toEndOf="parent"
@@ -37,6 +39,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
         android:layout_marginBottom="18dp"
+        android:textColor="@color/white"
         android:text="Result"
         android:textSize="38sp"
         app:layout_constraintBottom_toBottomOf="parent"

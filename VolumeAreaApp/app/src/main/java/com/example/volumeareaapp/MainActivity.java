@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.GridView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -45,8 +46,18 @@ public class MainActivity extends AppCompatActivity {
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Intent i = new Intent(getApplicationContext(), Cylinder.class);
-                startActivity(i);
+                   Intent i1 = new Intent(getApplicationContext(), Sphere.class);
+                   Intent i2 = new Intent(getApplicationContext(), Cylinder.class);
+                   Intent i3 = new Intent(getApplicationContext(), Cube.class);
+                   Intent i4 = new Intent(getApplicationContext(), Prism.class);
+                   if(id == 0)
+                       startActivity(i1);
+                   else if(id == 1)
+                       startActivity(i2);
+                   else if(id == 2)
+                       startActivity(i3);
+                   else
+                       startActivity(i4);
             }
         });
     }

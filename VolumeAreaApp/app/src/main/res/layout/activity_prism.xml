@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background"
     tools:context=".Sphere">
 
     <TextView
@@ -12,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="78dp"
         android:text="Prism Volume"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="48sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -24,7 +25,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
         android:hint="Enter the Base"
-        android:textColor="@color/black"
+        android:textColorHint="@color/white"
         android:textSize="32sp"
         app:layout_constraintBottom_toTopOf="@+id/prism_volume"
         app:layout_constraintEnd_toEndOf="parent"
@@ -37,7 +38,8 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="301dp"
         android:hint="Enter the Height"
-        android:textColor="@color/black"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
         android:textSize="32sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -52,6 +54,7 @@
         android:layout_marginBottom="18dp"
         android:text="Result"
         android:textSize="38sp"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.4"
