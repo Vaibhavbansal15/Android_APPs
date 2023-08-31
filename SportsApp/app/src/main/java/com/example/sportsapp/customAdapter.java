@@ -1,5 +1,6 @@
 package com.example.sportsapp;
 
+import android.content.ClipData;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,6 +15,12 @@ import java.util.List;
 public class customAdapter extends RecyclerView.Adapter<customAdapter.SportsViewHolder> {
 
     private List<Sport> sportList;
+    public ItemClickListener clickListener;
+
+    public void setClickListener(ItemClickListener listener){
+        this.clickListener = listener;
+    }
+
 
     public customAdapter(List<Sport> sportList) {
         this.sportList = sportList;
@@ -39,7 +46,7 @@ public class customAdapter extends RecyclerView.Adapter<customAdapter.SportsView
         return sportList.size();
     }
 
-    public static class SportsViewHolder extends RecyclerView.ViewHolder{
+    public class SportsViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
         TextView textView;
         ImageView imageView;
 
@@ -48,6 +55,14 @@ public class customAdapter extends RecyclerView.Adapter<customAdapter.SportsView
 
             textView = itemView.findViewById(R.id.textView);
             imageView = itemView.findViewById(R.id.imageViewCard);
+
+            itemView.setOnClickListener(this);
         }
+
+        @Override
+        public void onClick(View v) {
+            if(clickListener != null){
+                clickListener.onClick(v, getAdapterPosition());
+            }        }
     }
 }
