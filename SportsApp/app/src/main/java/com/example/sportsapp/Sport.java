@@ -12,15 +12,7 @@ public class Sport {
         return sportName;
     }
 
-    public void setSportName(String sportName) {
-        this.sportName = sportName;
-    }
-
     public int getSportImg() {
         return sportImg;
-    }
-
-    public void setSportImg(int sportImg) {
-        this.sportImg = sportImg;
     }
 }

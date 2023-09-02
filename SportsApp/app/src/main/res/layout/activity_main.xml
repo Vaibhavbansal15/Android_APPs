@@ -11,9 +11,11 @@
         android:layout_width="match_parent"
         android:layout_height="220dp"
         android:src="@drawable/header"
+        android:contentDescription="Header Image of the App"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"

@@ -1,6 +1,5 @@
 package com.example.sportsapp;
 
-import android.content.ClipData;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,7 +13,7 @@ import java.util.List;
 
 public class customAdapter extends RecyclerView.Adapter<customAdapter.SportsViewHolder> {
 
-    private List<Sport> sportList;
+    private final List<Sport> sportList;
     public ItemClickListener clickListener;
 
     public void setClickListener(ItemClickListener listener){
