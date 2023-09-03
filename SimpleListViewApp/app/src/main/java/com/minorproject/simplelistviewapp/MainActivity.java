@@ -35,7 +35,6 @@ public class MainActivity extends AppCompatActivity {
                 R.id.textView,
                 worldCup23
         );
-
         listView.setAdapter(adapter);
     }
 }
