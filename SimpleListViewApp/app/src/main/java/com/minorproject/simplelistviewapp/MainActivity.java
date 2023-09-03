@@ -31,7 +31,8 @@ public class MainActivity extends AppCompatActivity {
         // 3- Adapter
         ArrayAdapter adapter = new ArrayAdapter(
                 this,
-                android.R.layout.simple_list_item_1,
+                R.layout.my_item_layout,
+                R.id.textView,
                 worldCup23
         );
 
