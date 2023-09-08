@@ -40,7 +40,6 @@ public class MainActivity extends AppCompatActivity implements ItemClickListener
         recyclerView.setAdapter(adapter);
 
         adapter.setClickListener(this);
-
     }
 
     @Override

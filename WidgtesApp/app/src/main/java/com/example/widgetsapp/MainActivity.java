@@ -10,6 +10,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.bumptech.glide.Glide;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -35,6 +37,12 @@ public class MainActivity extends AppCompatActivity {
         });
 
         ImageView myImageView = findViewById(R.id.SampleImg);
-        myImageView.setImageResource(R.drawable.welcomeimg);
+        // myImageView.setImageResource(R.drawable.welcomeimg);
+
+        // Glide Library
+        Glide
+                .with(this)
+                .load(R.drawable.welcomeimg)
+                .into(myImageView);
     }
 }
